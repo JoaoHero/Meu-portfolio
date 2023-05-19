@@ -1,4 +1,4 @@
-let menuMobile = document.querySelector(".menuBar-mobile");
+let menuMobile = document.querySelector("#checkbox-menu");
 
 menuMobile.addEventListener('click', function()  {
     let menuContainer = document.querySelector(".menuBar-mobileItens");

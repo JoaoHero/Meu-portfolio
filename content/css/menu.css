@@ -36,10 +36,10 @@
 
 .menuBar-mobileItens {
     position: absolute;
-    top: 8rem;
+    top: 7rem;
     background-color: black;
     width: 20rem;
-    right: 1rem;
+    right: -2rem;
     height: 30rem;
     justify-content: center;
     border-radius: 1rem;
@@ -61,18 +61,6 @@
     color: var(--color-secondary);    
     transition: all .4s;
 } 
-
-/*Setinha do container do menu*/
-#menuMobile-arrow {
-    background-color: black;
-    height: 2rem;
-    width: 2rem;
-    right: .5rem;
-    position: absolute;
-    top: 6rem;
-    transform: rotate(45deg);
-    display: none;
-}
 
 /*Menu Hamburguer*/
 #checkbox-menu {
