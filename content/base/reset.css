@@ -4,11 +4,17 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    color: #F0E3CA;
+    color: var(--color-primary);
 }
 
-
-html, body {
-    height: 100%;
+body {
+    height: 100vh;
     background: radial-gradient(100% 100% at 50% 100%, #1F1E1B 21.52%, #1B1A17 100%);
+    font-family: 'Inconsolata', monospace;
 }
+
+html {
+    font-size: 62.5%;
+}
+
+

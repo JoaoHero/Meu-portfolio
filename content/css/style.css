@@ -1,4 +1,10 @@
+/*Variaveis de cores para nosso projeto*/
+@import url("../base/variaveis.css");
+/*Menu*/
+@import url("../css/menu.css");
 /*Font Inconsolata!*/
 @import url("../base/font.css");
 /*Reset do css*/
 @import url("../base/reset.css");
+
+

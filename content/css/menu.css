@@ -1,0 +1,91 @@
+.menuBar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+    align-items: center;
+    height: 7rem;
+}
+
+.menuBar > h2 {
+    font-size: 2rem;
+}
+
+.menuBar > h2 > span {
+    color: var(--color-secondary);
+}
+
+.menuBar-itens > ul {
+    display: flex;
+}
+
+.menuBar-itens > ul > li > a {
+    font-size: 1.5rem;
+    padding: 0 1.5rem;
+    transition: all .4s;
+}
+
+.menuBar-itens > ul > li > a:hover {
+    color: var(--color-secondary);
+}
+.menuBar-mobile {
+    display: none;
+}
+
+#checkbox-menu {
+    position: absolute;
+    opacity: 0;
+}
+
+label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 2.2rem;
+    width: 3rem;
+}
+
+label span {
+    position: absolute;
+    display: block;
+    height: .5rem;
+    width: 100%;
+    border-radius: 3rem;
+    background-color: #FFF;
+    transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1) {
+    top: 0;
+}
+
+label span:nth-child(2) {
+    top: 8px;
+}
+
+label span:nth-child(3) {
+    top: 16px;
+}
+
+#checkbox-menu:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+@media (max-width: 600px) {
+    .menuBar-itens {
+        display: none;
+    }
+    .menuBar-mobile{
+        display: block;
+    }
+}
