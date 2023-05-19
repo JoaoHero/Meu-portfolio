@@ -28,10 +28,53 @@
 .menuBar-itens > ul > li > a:hover {
     color: var(--color-secondary);
 }
+
 .menuBar-mobile {
+    display: none;
+    position: relative;
+}
+
+.menuBar-mobileItens {
+    position: absolute;
+    top: 8rem;
+    background-color: black;
+    width: 20rem;
+    right: 1rem;
+    height: 30rem;
+    justify-content: center;
+    border-radius: 1rem;
+    display: none;
+} 
+
+.menuBar-mobileItens > ul {
+    margin-top: 3rem;
+} 
+
+.menuBar-mobileItens > ul > li {
+    font-size: 2.5rem;
+    padding: 1.5rem 0;
+    text-align: center;
+
+} 
+
+.menuBar-mobileItens > ul > li > a:hover{
+    color: var(--color-secondary);    
+    transition: all .4s;
+} 
+
+/*Setinha do container do menu*/
+#menuMobile-arrow {
+    background-color: black;
+    height: 2rem;
+    width: 2rem;
+    right: .5rem;
+    position: absolute;
+    top: 6rem;
+    transform: rotate(45deg);
     display: none;
 }
 
+/*Menu Hamburguer*/
 #checkbox-menu {
     position: absolute;
     opacity: 0;
@@ -81,11 +124,16 @@ label span:nth-child(3) {
     top: 8px;
 }
 
+
+
 @media (max-width: 600px) {
     .menuBar-itens {
         display: none;
     }
     .menuBar-mobile{
+        display: block;
+    }
+    .open {
         display: block;
     }
 }
