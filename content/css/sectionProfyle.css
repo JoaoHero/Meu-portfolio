@@ -1,3 +1,4 @@
+/*Animações da foto da section*/
 @keyframes animationPhoto {
     0%{
         transform: rotate(0);
@@ -22,18 +23,38 @@
     }
 }
 
+@keyframes animationIcon {
+    0%{
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(-46deg);
+
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(46deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
 
 .wrapper {
     height: 100vh;
 }
 
-.myProfyle {
+.myProfyle-container {
     height: 70rem;
     width: 100%;
     position: relative;
     flex-wrap: wrap;
     display: flex;
 }
+
+/*Container Direito!*/
 
 .myProfile-right {
     height: 80%;
@@ -42,38 +63,6 @@
     top: 10%;
     right: 0;
     overflow: hidden;    
-}
-
-.myProfile-left {
-    height: 80%;
-    width: 50%;
-    position: absolute;
-    left: 0;
-    top: 10%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.myProfile-left-itens {
-    display: flex;
-    flex-direction: column;
-}
-
-.myProfile-left-itens > h1 {
-    color: var(--color-secondary);
-    font-size: 5rem;
-}
-
-.myProfile-left-itens > h2 {
-    font-size: 3rem;
-    margin-top: -1rem;
-}
-
-.myProfile-left-itens > span{
-    font-size: 2.5rem;
-    margin-top: 2rem;
 }
 
 .myProfile-img {
@@ -113,6 +102,102 @@
     z-index: 2;
 }
 
+/*Container Esquerdo!*/
+
+.myProfile-left {
+    height: 80%;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myProfile-left-itens {
+    display: flex;
+    flex-direction: column;
+}
+
+.myProfile-left-itens > h1 {
+    color: var(--color-secondary);
+    font-size: 5rem;
+}
+
+.myProfile-left-itens > h2 {
+    font-size: 3rem;
+    margin-top: -1rem;
+}
+
+.myProfile-left-itens > span{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+.bubbles {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.border-icon {
+    height: 10rem;
+    width: 10rem;
+    background-color: #333333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#react {
+    font-size: 6rem;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    animation: animationIcon 4s forwards infinite;
+}
+
+#js {
+    font-size: 6rem;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    animation: animationIcon 4s forwards infinite;
+}
+
+#html {
+    font-size: 6rem;
+    position: absolute;
+    top: 15%;
+    left: 75%;
+    animation: animationIcon 4s forwards infinite;
+}
+
+#nodejs {
+    font-size: 6rem;
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    animation: animationIcon 4s forwards infinite;
+}
+
+#git {
+    font-size: 6rem;
+    position: absolute;
+    top: 10%;
+    left: 43%;
+    animation: animationIcon 4s forwards infinite;
+}
+
+
+
+
 @media (max-width: 1100px){
     .myProfile-right {
         width: 100%;
@@ -120,20 +205,11 @@
         align-items: center;
         justify-content: center;
     }
-    .myProfile-img {
-        width: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .imgOrganize {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
     .myProfile-left {
         width: 100%;
         margin-top: 56rem;
-        height: 30rem;
+        height: 50rem;
+        border: 1px solid blue;
     }
     .myProfile-left-itens {
         display: flex;
@@ -143,10 +219,35 @@
     .myProfile-left-itens > span {
         font-size: clamp(1.5rem, 2.5vw, 3rem);
     }
+    .myProfile-img {
+        width: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .img {
+        position: absolute;
+        left: 50%;
+        border: 1px solid salmon;
+        transform: translateX(-50%);
+        overflow: hidden;
+    }
     #rectangle2 {
         position: absolute;
         left: -3rem;
         top: 5rem;
         z-index: -1;
+    }
+    /*Media querry para icons animado*/
+    .bubbles {
+        border: 1px solid burlywood;
+    }
+    #react {
+        left: 5%;
+    }
+    #git {
+        left: 38%;
+    }
+    #html {
+        left: 70%;
     }
 }

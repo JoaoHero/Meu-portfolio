@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" type="text/css" href="content/css/style.css">
     <title>Meu Portfolio</title>
 </head>
@@ -12,6 +13,7 @@
         <div class="wrapper">
             <header class="menuBar">
                 <h2><span>&lt;/</span>João_Heroo<span>&gt;</span></h2>
+                <!--Menu Mobile-->
                 <div class="menuBar-mobile">
                     <input type="checkbox" id="checkbox-menu" />
                     <label for="checkbox-menu">
@@ -29,6 +31,7 @@
                         </ul>
                     </div>
                 </div>
+                <!--Menu Desktop-->
                 <nav class="menuBar-itens">
                     <ul>
                         <li><a href="#">Sobre</a></li>
@@ -37,27 +40,37 @@
                         <li><a href="#">Contato</a></li>
                     </ul>
                 </nav>
+                <!--Fim do menu Desktop-->
             </header>
-            <section class="myProfyle">
+            <!--Section do perfil-->
+            <section class="myProfyle-container">
                 <div class="myProfile-left">
                     <div class="myProfile-left-itens">
                         <h1>João Ramos</h1>
                         <h2>Front-end Developer</h2>
                         <span>Construindo a web, um código de cada vez.</span>
                     </div>
+                    <div class="bubbles">
+                            <i id="react" class="devicon-react-original-wordmark colored border-icon"></i>
+                            <i id="js" class="devicon-javascript-plain colored border-icon"></i>
+                            <i id="html" class="devicon-html5-plain colored border-icon"></i>
+                            <i id="nodejs" class="devicon-nodejs-plain colored border-icon"></i>
+                            <i id="git" class="devicon-git-plain colored border-icon"></i>
+                    </div>
                 </div>
                 <div class="myProfile-right">
                     <img alt="MyProfileBackground" src="content/img/img-background.png">
                     <div class="myProfile-img">
-                    <div class="imgOrganize">
-                        <img id="rectangle1" alt="Rectangle1" src="content/img/Rectangle 1.png"/> 
-                        <img id="rectangle2" alt="Retangle2" src="content/img/Rectangle 2.png"/>
-                        <img id="rectangle3" alt="Retangle3" src="content/img/Rectangle 1.png"/>
-
-                        <img id="me" alt="Retangle3" src="content/img/me.jpg"/>
-                    </div>
+                        <!--Imgs que criam a borda da foto-->
+                        <div class="img">
+                            <img id="rectangle1" alt="Rectangle1" src="content/img/Rectangle 1.png"/> 
+                            <img id="rectangle2" alt="Retangle2" src="content/img/Rectangle 2.png"/>
+                            <img id="rectangle3" alt="Retangle3" src="content/img/Rectangle 1.png"/>
+                            <img id="me" alt="Retangle3" src="content/img/me.jpg"/>
+                        </div>
                     </div>
                 </div>
+            <!--Final da section do perfil-->
             </section>
         </div>
     </main>
