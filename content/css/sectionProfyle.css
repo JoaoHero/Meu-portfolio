@@ -196,9 +196,6 @@
     animation: animationIcon 4s forwards infinite;
 }
 
-
-
-
 @media (max-width: 1100px){
     .myProfyle-container {
         height: 120rem;
@@ -240,9 +237,9 @@
         top: 5rem;
         z-index: -1;
     }
+
     /*Media querry para icons animado*/
-    .bubbles {
-    }
+    
     #react {
         left: 15%;
     }
