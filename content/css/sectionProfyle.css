@@ -48,10 +48,11 @@
 
 .myProfyle-container {
     height: 70rem;
-    width: 100%;
+    max-width: 1920px;
     position: relative;
     flex-wrap: wrap;
     display: flex;
+    margin: 0 auto;
 }
 
 /*Container Direito!*/

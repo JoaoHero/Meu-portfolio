@@ -1,0 +1,48 @@
+.mySkills {
+    height: auto;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: static;
+    border: 1px solid wheat;
+    margin-bottom: 3rem;
+}
+
+.mySkills-tittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.mySkills-tittle > h2 {
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
+    color: var(--color-secondary);
+}
+
+.mySkills-itens {
+    width: 50%;
+    height: auto;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.mySkills-container {
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid blue;
+}
+
+.teste {
+    height: 30rem;
+    width: 100%;
+    border: 1px solid green;
+    background-color: gray;
+}
