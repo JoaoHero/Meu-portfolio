@@ -209,7 +209,6 @@
         width: 100%;
         margin-top: 56rem;
         height: 50rem;
-        border: 1px solid blue;
     }
     .myProfile-left-itens {
         display: flex;
@@ -227,9 +226,7 @@
     .img {
         position: absolute;
         left: 50%;
-        border: 1px solid salmon;
         transform: translateX(-50%);
-        overflow: hidden;
     }
     #rectangle2 {
         position: absolute;
@@ -239,15 +236,32 @@
     }
     /*Media querry para icons animado*/
     .bubbles {
-        border: 1px solid burlywood;
     }
     #react {
-        left: 5%;
+        left: 10%;
     }
     #git {
         left: 38%;
     }
     #html {
         left: 70%;
+    }
+}
+
+@media (max-width: 420px){
+    #react {
+        left: 5%;
+    }
+    #rectangle1{
+        width: 25rem;
+    }
+    #rectangle2{
+        width: 30rem;
+    }
+    #rectangle3{
+        width: 25rem;
+    }
+    #me {
+        width: 12rem;
     }
 }
