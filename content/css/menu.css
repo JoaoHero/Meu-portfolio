@@ -2,13 +2,14 @@
     background-color: black;
     display: flex;
     justify-content: space-between;
-    padding: 0 5rem;
+    padding: 0 20rem;
     align-items: center;
     height: 7rem;
 }
 
 .menuBar > h2 {
     font-size: 2rem;
+    cursor: pointer;
 }
 
 .menuBar > h2 > span {
@@ -114,12 +115,16 @@ label span:nth-child(3) {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+    .menuBar {
+        padding: 0 5rem;
+    }
     .menuBar-itens {
         display: none;
     }
     .menuBar-mobile{
         display: block;
+        z-index: 1;
     }
     .open {
         display: block;

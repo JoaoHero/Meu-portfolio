@@ -1,0 +1,122 @@
+.wrapper {
+    height: 100vh;
+}
+
+.myProfyle {
+    height: 70rem;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.myProfile-right {
+    height: 80%;
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    overflow: hidden;    
+}
+
+.myProfile-left {
+    height: 80%;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myProfile-left-itens {
+    display: flex;
+    flex-direction: column;
+}
+
+.myProfile-left-itens > h1 {
+    color: var(--color-secondary);
+    font-size: 5rem;
+}
+
+.myProfile-left-itens > h2 {
+    font-size: 3rem;
+    margin-top: -1rem;
+}
+
+.myProfile-left-itens > span{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+.myProfile-img {
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+#rectangle2 {
+    position: absolute;
+    left: -1rem;
+    top: 5rem;
+    z-index: -1;
+}
+
+#rectangle3 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#me {
+    position: absolute;
+    left: 6.5rem;
+    top: 6rem;
+    width: 20rem;
+    border-radius: 30rem;
+    z-index: 2;
+}
+
+@media (max-width: 1100px){
+    .myProfile-right {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .myProfile-img {
+        width: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .imgOrganize {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .myProfile-left {
+        width: 100%;
+        margin-top: 56rem;
+        height: 30rem;
+    }
+    .myProfile-left-itens {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .myProfile-left-itens > span {
+        font-size: clamp(1.5rem, 2.5vw, 3rem);
+    }
+    #rectangle2 {
+        position: absolute;
+        left: -3rem;
+        top: 5rem;
+        z-index: -1;
+    }
+}
