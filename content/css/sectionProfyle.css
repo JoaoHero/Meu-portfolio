@@ -67,7 +67,7 @@
 
 .myProfile-img {
     width: 50%;
-    height: 70%;
+    height: 80%;
     position: absolute;
     top: 50%;
     left: 10%;
@@ -199,15 +199,20 @@
 
 
 @media (max-width: 1100px){
+    .myProfyle-container {
+        height: 120rem;
+    }
     .myProfile-right {
         width: 100%;
+        height: 55%;
         display: flex;
         align-items: center;
         justify-content: center;
+        top: 0%;
     }
     .myProfile-left {
         width: 100%;
-        margin-top: 56rem;
+        margin-top: 46rem;
         height: 50rem;
     }
     .myProfile-left-itens {
@@ -238,19 +243,34 @@
     .bubbles {
     }
     #react {
-        left: 10%;
+        left: 15%;
     }
     #git {
-        left: 38%;
+        left: 42%;
     }
     #html {
         left: 70%;
     }
+    #js {
+        left: 20%;
+    }
 }
 
 @media (max-width: 420px){
+    .myProfyle-container {
+        height: 100rem;
+    }
+    .myProfile-left {
+        margin-top: 38rem;
+    }
+    .myProfile-right {
+        top: 4%;
+    }
     #react {
         left: 5%;
+    }
+    #git {
+        left: 38%;
     }
     #rectangle1{
         width: 25rem;
@@ -263,5 +283,8 @@
     }
     #me {
         width: 12rem;
+    }
+    #nodejs {
+        left: 60%;
     }
 }
