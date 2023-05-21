@@ -42,7 +42,16 @@
     .about-me-description {
         flex-direction: column;
     }
-    .about-me {
-        margin-top: -5rem;
+
+}
+
+@media (max-width:300px) {
+    .about-me-description {
+        flex-direction: column;
     }
+
+    .about-me {
+        margin-top: 5rem;
+    }
+
 }

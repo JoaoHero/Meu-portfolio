@@ -128,12 +128,12 @@
 }
 
 .myProfile-left-itens > h2 {
-    font-size: 3rem;
+    font-size: clamp(2rem, 2.5vw, 3rem);
     margin-top: -1rem;
 }
 
-.myProfile-left-itens > span{
-    font-size: 2.5rem;
+.myProfile-left-itens > span {
+    font-size: clamp(1rem, 2.5vw, 3rem);
     margin-top: 2rem;
 }
 
@@ -194,6 +194,12 @@
     top: 10%;
     left: 43%;
     animation: animationIcon 4s forwards infinite;
+}
+
+@media (max-width: 1300px) {
+    .myProfile-left-itens {
+        text-align: center;
+    }
 }
 
 @media (max-width: 1100px){
@@ -264,11 +270,44 @@
     .myProfile-right {
         top: 4%;
     }
+    #rectangle1{
+        width: 25rem;
+    }
+    #rectangle2{
+        width: 30rem;
+    }
+    #rectangle3{
+        width: 25rem;
+    }
+    #me {
+        width: 12rem;
+    }
     #react {
         left: 5%;
     }
+
+    /*Media querry para icons animado*/
+
     #git {
         left: 38%;
+    }
+    #nodejs {
+        left: 60%;
+    }
+}
+
+@media (max-width: 300px){
+    .myProfyle-container {
+        height: 100rem;
+    }
+    .myProfile-left {
+        margin-top: 38rem;
+    }
+    .myProfile-left-itens > span {
+        font-size: 1.2rem;
+    }
+    .myProfile-right {
+        top: 4%;
     }
     #rectangle1{
         width: 25rem;
@@ -282,7 +321,31 @@
     #me {
         width: 12rem;
     }
+
+        /*Media querry para icons animado*/
+
+    #react {
+        left: 1%;
+        height: 8rem;
+        width: 8rem;
+    }
+    #git {
+        left: 35%;
+        height: 8rem;
+        width: 8rem;
+    }
+    #html {
+        width: 8rem;
+        height: 8rem;
+    }
+    #js {
+        left: 8%;
+        height: 9rem;
+        width: 9rem;
+    }
     #nodejs {
-        left: 60%;
+        right: 0%;
+        height: 9rem;
+        width: 9rem;
     }
 }
