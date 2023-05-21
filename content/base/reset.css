@@ -11,6 +11,7 @@ body {
     height: 100vh;
     background: radial-gradient(100% 100% at 50% 100%, #1F1E1B 21.52%, #1F1E1B 100%);
     font-family: 'Inconsolata', monospace;
+    overflow-x: hidden;
 }
 
 html {

@@ -7,8 +7,8 @@
     justify-content: center;
     flex-direction: column;
     position: static;
-    border: 1px solid wheat;
     margin-bottom: 3rem;
+    margin-top: 10rem;
 }
 
 .mySkills-tittle {
@@ -27,7 +27,6 @@
 .mySkills-itens {
     width: 50%;
     height: auto;
-    border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -37,12 +36,43 @@
 .mySkills-container {
     width: 20rem;
     height: 20rem;
-    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #21201D;
+    border-radius: 1rem;
+    border: 1px solid #141412;
+    cursor: pointer;
 }
 
-.teste {
+.mySkills-container > p {
+    font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+@media (max-width:600px) {
+    .mySkills-container {
+        width: 15rem;
+        height: 7rem;
+        flex-direction: row;
+        border: 1px solid #141412;
+    }
+    .mySkills-container > img {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+#popup-descriptionHtml {
+    display: none;
+}
+
+#popup-descriptionCss {
+    display: none;
+}
+
+
+.myWorks {
     height: 30rem;
-    width: 100%;
-    border: 1px solid green;
-    background-color: gray;
 }

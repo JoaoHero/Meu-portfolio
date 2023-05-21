@@ -42,4 +42,7 @@
     .about-me-description {
         flex-direction: column;
     }
+    .about-me {
+        margin-top: -5rem;
+    }
 }
