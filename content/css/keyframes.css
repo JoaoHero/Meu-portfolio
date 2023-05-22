@@ -1,0 +1,43 @@
+/*Animações da foto da section*/
+@keyframes animationPhoto {
+    0%{
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animationPhoto2 {
+    0%{
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes animationIcon {
+    0%{
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(-46deg);
+
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(46deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
