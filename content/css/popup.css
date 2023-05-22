@@ -6,6 +6,7 @@
     width: 100vw;
     height: 100vh;
     display: none;
+    z-index: 1;
 }
 
 .popup {
@@ -17,6 +18,7 @@
     background: radial-gradient(100% 100% at 50% 100%, #1F1E1B 21.52%, #1F1E1B 100%);
     position: relative;
     border-radius: 1rem;
+
 }
 
 .popup-close {

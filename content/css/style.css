@@ -1,3 +1,7 @@
+/*Footer*/
+@import url("../css/footer.css");
+/*Section myProjects*/
+@import url("../css/myProject.css");
 /*Popup dos elementos da section MySkills*/
 @import url("../css/popup.css");
 /*Terceira section do projeto, mySkills*/

@@ -11,7 +11,7 @@
     margin-top: 10rem;
 }
 
-.mySkills-tittle {
+.tittle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@
     margin-bottom: 5rem;
 }
 
-.mySkills-tittle > h2 {
+.tittle > h2 {
     font-size: clamp(1.5rem, 2.5vw, 3rem);
     color: var(--color-secondary);
 }
