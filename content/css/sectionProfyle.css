@@ -52,13 +52,19 @@
     z-index: 1;
 }
 
-#me {
+.img-perfil {
     position: absolute;
     left: 6.5rem;
-    top: 6rem;
+    top: 4rem;
     width: 20rem;
+    height: 30rem;
     border-radius: 30rem;
     z-index: 2;
+    overflow: hidden;
+}
+
+#me {
+    width: 100%;
 }
 
 /*Container Esquerdo!*/
