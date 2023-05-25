@@ -243,8 +243,19 @@
     #rectangle3{
         width: 25rem;
     }
+    .img-perfil {
+        position: absolute;
+        left: 6.5rem;
+        top: 4rem;
+        width: 10rem;
+        height: 17rem;
+        border-radius: 30rem;
+        z-index: 2;
+        overflow: hidden;
+        border: 1px solid red;
+    }
     #me {
-        width: 12rem;
+        width: 100%;
     }
     #react {
         left: 5%;
@@ -283,7 +294,7 @@
         width: 25rem;
     }
     #me {
-        width: 12rem;
+        width: 100%;
     }
 
         /*Media querry para icons animado*/
