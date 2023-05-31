@@ -252,7 +252,6 @@
         border-radius: 30rem;
         z-index: 2;
         overflow: hidden;
-        border: 1px solid red;
     }
     #me {
         width: 100%;

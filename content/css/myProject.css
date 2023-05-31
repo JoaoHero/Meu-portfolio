@@ -2,7 +2,7 @@
     height: auto;
     max-width: 1920px;
     margin: 0 auto;
-    margin-top: 20rem;
+    margin-top: 10rem;
 }
 
 .myProjects-itens {
@@ -117,4 +117,59 @@
     height: 15rem;
     font-size: 1.5rem;
     text-align: start;
+}
+
+@media (max-width: 450px) {
+    .project1 {
+        height: 25rem;
+        width: 25rem;
+        position: relative;
+    }
+    .project2 {
+        height: 25rem;
+        width: 25rem;
+        position: relative;
+    }    
+    .project3 {
+        height: 25rem;
+        width: 25rem;
+        position: relative;
+    }
+    .myProjects-itens {
+        gap: 5rem;
+    }
+    .project1 > img {
+        height: 25rem;
+    }
+    .project2 > img {
+        height: 25rem;
+    }
+    .project3 > img {
+        height: 25rem;
+    }
+    .Project-hover {
+        height: 25rem;
+        border: 1px solid red;
+    }
+    .hover-tittle {
+        margin-top: 1rem;
+    }
+    .hover-tittle > h2 {
+        font-size: 3rem;
+    }
+    .hover-tittle > p {
+        font-size: 1.5rem;
+    }
+    .hover-description {
+        position: absolute;
+        top: 30%;
+        display: flex;
+        justify-content: center;
+    }
+    .hover-description > p {
+        width: 80%;
+        height: 15rem;
+        font-size: 1.3rem;
+        text-align: start;
+    }
 }
