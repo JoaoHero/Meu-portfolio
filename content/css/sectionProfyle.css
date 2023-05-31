@@ -1,36 +1,34 @@
-
-
 .wrapper {
     height: 100vh;
 }
 
 .myProfyle-container {
+    display: flex;
+    flex-wrap: wrap;
     height: 70rem;
+    margin: 0 auto;
     max-width: 1920px;
     position: relative;
-    flex-wrap: wrap;
-    display: flex;
-    margin: 0 auto;
 }
 
 /*Container Direito!*/
 
 .myProfile-right {
     height: 80%;
-    width: 50%;
     position: absolute;
-    top: 10%;
+    overflow: hidden;
     right: 0;
-    overflow: hidden;    
+    top: 10%;
+    width: 50%;
 }
 
 .myProfile-img {
-    width: 50%;
     height: 80%;
+    left: 10%;
     position: absolute;
     top: 50%;
-    left: 10%;
     transform: translateY(-50%);
+    width: 50%;
 }
 
 #rectangle1 {
@@ -38,29 +36,29 @@
 }
 
 #rectangle2 {
-    position: absolute;
+    animation: animationPhoto forwards 8s infinite;
     left: -1rem;
+    position: absolute;
     top: 5rem;
     z-index: -1;
-    animation: animationPhoto forwards 8s infinite;
 }
 
 #rectangle3 {
-    position: absolute;
     left: 0;
+    position: absolute;
     top: 0;
     z-index: 1;
 }
 
 .img-perfil {
-    position: absolute;
+    border-radius: 30rem;
+    height: 30rem;
     left: 6.5rem;
+    overflow: hidden;
+    position: absolute;
     top: 4rem;
     width: 20rem;
-    height: 30rem;
-    border-radius: 30rem;
     z-index: 2;
-    overflow: hidden;
 }
 
 #me {
@@ -70,15 +68,15 @@
 /*Container Esquerdo!*/
 
 .myProfile-left {
-    height: 80%;
-    width: 50%;
-    position: absolute;
-    left: 0;
-    top: 10%;
-    overflow: hidden;
-    display: flex;
     align-items: center;
+    display: flex;
+    height: 80%;
     justify-content: center;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 10%;
+    width: 50%;
 }
 
 .myProfile-left-itens {
@@ -102,65 +100,65 @@
 }
 
 .bubbles {
-    position: absolute;
-    display: flex;
-    height: 100%;
-    width: 100%;
     align-items: center;
+    display: flex;
+    position: absolute;
+    height: 100%;
     justify-content: center;
+    width: 100%;
 }
 
 .border-icon {
-    height: 10rem;
-    width: 10rem;
+    align-items: center;
     background-color: #333333;
     border-radius: 50%;
     display: flex;
-    align-items: center;
+    height: 10rem;
     justify-content: center;
+    width: 10rem;
 }
 
 #react {
+    animation: animationIcon 4s forwards infinite;
     font-size: 6rem;
+    left: 10%;
     position: absolute;
     top: 15%;
-    left: 10%;
-    animation: animationIcon 4s forwards infinite;
 }
 
 #js {
+    animation: animationIcon 4s forwards infinite;
     font-size: 6rem;
+    left: 10%;
     position: absolute;
     top: 70%;
-    left: 10%;
-    animation: animationIcon 4s forwards infinite;
 }
 
 #html {
+    animation: animationIcon 4s forwards infinite;
     font-size: 6rem;
+    left: 75%;
     position: absolute;
     top: 15%;
-    left: 75%;
-    animation: animationIcon 4s forwards infinite;
 }
 
 #nodejs {
+    animation: animationIcon 4s forwards infinite;
     font-size: 6rem;
+    left: 65%;
     position: absolute;
     top: 70%;
-    left: 65%;
-    animation: animationIcon 4s forwards infinite;
 }
 
 #git {
+    animation: animationIcon 4s forwards infinite;
     font-size: 6rem;
+    left: 43%;
     position: absolute;
     top: 10%;
-    left: 43%;
-    animation: animationIcon 4s forwards infinite;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1370px) {
     .myProfile-left-itens {
         text-align: center;
     }
@@ -171,39 +169,39 @@
         height: 120rem;
     }
     .myProfile-right {
-        width: 100%;
-        height: 55%;
-        display: flex;
         align-items: center;
+        display: flex;
+        height: 55%;
         justify-content: center;
         top: 0%;
+        width: 100%;
     }
     .myProfile-left {
-        width: 100%;
-        margin-top: 46rem;
         height: 50rem;
+        margin-top: 46rem;
+        width: 100%;
     }
     .myProfile-left-itens {
-        display: flex;
         align-items: center;
+        display: flex;
         width: 100%;
     }
     .myProfile-left-itens > span {
         font-size: clamp(1.5rem, 2.5vw, 3rem);
     }
     .myProfile-img {
-        width: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: 50%;
     }
     .img {
-        position: absolute;
         left: 50%;
+        position: absolute;
         transform: translateX(-50%);
     }
     #rectangle2 {
-        position: absolute;
         left: -3rem;
+        position: absolute;
         top: 5rem;
         z-index: -1;
     }
@@ -244,14 +242,14 @@
         width: 25rem;
     }
     .img-perfil {
-        position: absolute;
-        left: 6.5rem;
-        top: 4rem;
-        width: 10rem;
-        height: 17rem;
         border-radius: 30rem;
-        z-index: 2;
+        height: 17rem;
+        left: 6.5rem;
+        position: absolute;
+        top: 4rem;
         overflow: hidden;
+        width: 10rem;
+        z-index: 2;
     }
     #me {
         width: 100%;
@@ -309,8 +307,8 @@
         width: 8rem;
     }
     #html {
-        width: 8rem;
         height: 8rem;
+        width: 8rem;
     }
     #js {
         left: 8%;
@@ -318,8 +316,8 @@
         width: 9rem;
     }
     #nodejs {
-        right: 0%;
         height: 9rem;
+        right: 0%;
         width: 9rem;
     }
 }
