@@ -1,7 +1,93 @@
-footer {
-    height: 50rem;
+.rodape {
+    height: 25rem;
     max-width: 1920px;
     margin: 0 auto;
-    border: 1px solid blueviolet;
-    margin-top: 20rem;
+    margin-top: 15rem;
+}
+
+.rodapeItens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.rodapeTittle > h2 > span {
+    color: var(--color-secondary);
+}
+
+.rodapeTittle > h2 {
+    font-size: 2.5rem;
+}
+
+.rodapeTittle > p {
+    font-size: 2rem;
+    letter-spacing: -0.10rem;
+    margin-top: 3rem;
+    text-align: justify;
+    width: 20rem;
+}
+
+.rodapeContact {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    height: 14rem;
+}
+
+.rodapeContact > h2 {
+    font-size: 2.5rem;
+    color: var(--color-secondary);
+}
+
+.contactItens {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.contactSocialmedia {
+    display: flex;
+    gap: 10rem;
+}
+
+.contact {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+
+.contact a {
+    font-size: 1.5rem;
+    transition: ease-in .2s;
+}
+
+.contact > a:hover {
+    cursor: pointer;
+    color: var(--color-secondary);
+    font-weight: 700;
+}
+
+
+
+@media (max-width: 736px) {
+    .contactSocialmedia {
+        display: flex;
+        gap: 1rem;
+    }
+    .rodapeContact {
+        margin-bottom: 5rem;
+        width: 20rem;
+    }
+    .rodape {
+        height: auto;
+    }
+    .rodapeItens {
+        gap: 5rem;
+    }
+    #email {
+        font-size: 1rem;
+    }
 }
