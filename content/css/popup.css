@@ -9,6 +9,13 @@
     z-index: 1;
 }
 
+.popup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 .popup {
     background: radial-gradient(100% 100% at 50% 100%, #1F1E1B 21.52%, #1F1E1B 100%);
     border-radius: 1rem;
