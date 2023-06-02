@@ -1,3 +1,7 @@
+.mySkillsWrapper {
+    overflow: hidden;
+}
+
 .mySkills {
     align-items: center;
     display: flex;
