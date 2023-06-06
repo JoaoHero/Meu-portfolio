@@ -85,6 +85,7 @@
     }
     .rodape {
         height: auto;
+        margin-top: 15rem;
     }
     .rodapeItens {
         gap: 5rem;

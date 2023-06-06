@@ -1,3 +1,5 @@
+/* Menu-Mobile */
+
 let menuMobile = document.querySelector("#checkbox-menu");
 
 menuMobile.addEventListener('click', function()  {
@@ -10,6 +12,9 @@ menuMobile.addEventListener('click', function()  {
     }
 });
 
+
+
+/* Div animated */
 
 const target = document.querySelectorAll("[data-animation]");
 const animationClass = "animate";
@@ -28,6 +33,8 @@ window.addEventListener('scroll', function() {
     animeScroll()
 })
 
+
+/* Pop-Pup */
 
 function popup() {
     const container = document.querySelector('.mySkills-itens');
@@ -109,7 +116,7 @@ function popup() {
 
 popup()
 
- 
+ /* Smoth link */
 
 
 
