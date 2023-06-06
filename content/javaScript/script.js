@@ -12,7 +12,26 @@ menuMobile.addEventListener('click', function()  {
     }
 });
 
+ /* Menu smooth link */
 
+ const menuItens = document.querySelectorAll(".menuBar ul a");
+
+ menuItens.forEach(item => {
+     item.addEventListener('click', scrollToIdOnclick);
+ })
+ 
+ function scrollToIdOnclick(event) {
+     event.preventDefault();
+ 
+     const element = event.target;
+     const id = element.getAttribute("href");
+     const section = document.querySelector(id).offsetTop;
+ 
+     window.scroll({
+         top: section - 200,
+         behavior: "smooth",
+     });
+ }
 
 /* Div animated */
 
@@ -32,7 +51,6 @@ function animeScroll() {
 window.addEventListener('scroll', function() {
     animeScroll()
 })
-
 
 /* Pop-Pup */
 
@@ -115,8 +133,4 @@ function popup() {
 }
 
 popup()
-
- /* Smoth link */
-
-
 
