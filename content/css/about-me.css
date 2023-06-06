@@ -17,7 +17,8 @@
 
 #myDescription {
     font-size: clamp(1.5rem, 2.5vw, 2.5rem);
-    letter-spacing: .2rem;
+    letter-spacing: -0.20rem;
+    text-align: justify;
     width: 50%;
 }
 
@@ -27,7 +28,10 @@
     .about-me-description {
         flex-direction: column;
     }
-
+    #myDescription {
+        font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+        letter-spacing: -0.14rem;
+    }
 }
 
 @media (max-width:300px) {
