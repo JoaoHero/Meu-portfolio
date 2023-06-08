@@ -1,0 +1,13 @@
+#link-top {
+    position: fixed;
+    right: 5rem;
+    bottom: 5rem;
+    z-index: 1;
+    height: 4rem;
+    overflow: hidden;
+}
+
+#link-top > img {
+    height: 5rem;
+
+}
